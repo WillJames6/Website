@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Will James Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-nav">
+    <div class="nav-center">
+        <a href="#projects"><i class="fa-solid fa-code"></i> Programming Projects</a>
+        <a href="#games"><i class="fa-solid fa-gamepad"></i> Game Reviews</a>
+
+        <span class="divider">|</span>
+
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="mailto:youremail@example.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+</header>
+
+<div class="container">
+
+    <h1>Will James</h1>
+
+    <h2>About me</h2>
+
+    <p>
+        I am a Computer Science graduate from Swansea University. I enjoy problem solving, programming, gaming, chess and sport.
+        <br><br>
+        Since completing work experience at Airbus and working at the University of Bath, I am currently applying for a permanent role in the computing field.
+    </p>
+
+    <h2 id="projects">My Coding Projects</h2>
+
+    <div class="projects">
+
+        <div class="project" onclick="location.href='projects/Ethereum-voting.html'">
+            <h3>Ethereum Voting System</h3>
+            <p>Blockchain-based voting system using Solidity.</p>
+
+            <div class="tags">
+                <span>Solidity</span>
+                <span>Blockchain</span>
+            </div>
+        </div>
+
+        <div class="project" onclick="location.href='projects/java-game.html'">
+            <h3>2D Java Game</h3>
+            <p>A small game built in Java.</p>
+
+            <div class="tags">
+                <span>Java</span>
+                <span>GameDev</span>
+            </div>
+        </div>
+
+        <div class="project" onclick="location.href='projects/Android-quiz.html'">
+            <h3>Android Quiz App</h3>
+            <p>Daily quiz app built for Android devices.</p>
+
+            <div class="tags">
+                <span>Android</span>
+                <span>UI</span>
+            </div>
+        </div>
+
+        <div class="project" onclick="location.href='projects/Unity-tower-defence.html'">
+            <h3>Unity Tower Defence</h3>
+            <p>A tower defence game built in Unity.</p>
+
+            <div class="tags">
+                <span>Unity</span>
+                <span>C#</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- GAME REVIEWS -->
+    <h2 id="games">Game Reviews</h2>
+
+    <div class="games-grid">
+
+        <div class="game-card" onclick="location.href='games/destiny2.html'">
+            <img src="images/destiny2.jpg" alt="Destiny 2">
+            <p>Destiny 2</p>
+        </div>
+
+        <div class="game-card" onclick="location.href='games/overwatch.html'">
+            <img src="images/overwatch.jpg" alt="Overwatch">
+            <p>Overwatch</p>
+        </div>
+
+        <div class="game-card" onclick="location.href='games/osrs.html'">
+            <img src="images/osrs.jpg" alt="OSRS">
+            <p>OSRS</p>
+        </div>
+
+        <div class="game-card" onclick="location.href='games/stardew.html'">
+            <img src="images/stardew.jpg" alt="Stardew Valley">
+            <p>Stardew Valley</p>
+        </div>
+
+        <div class="game-card" onclick="location.href='games/valheim.html'">
+            <img src="images/valheim.jpg" alt="Valheim">
+            <p>Valheim</p>
+        </div>
+
+        <div class="game-card" onclick="location.href='games/enshrouded.html'">
+            <img src="images/enshrouded.jpg" alt="Enshrouded">
+            <p>Enshrouded</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

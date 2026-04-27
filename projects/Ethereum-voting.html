@@ -4,27 +4,112 @@
     <meta charset="UTF-8">
     <title>Ethereum Voting System</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-<h1>Ethereum Voting System</h1>
+<header class="top-nav">
+    <div class="nav-center">
+        <a href="../index.html#projects"><i class="fa-solid fa-code"></i> Projects</a>
+        <a href="../index.html#games"><i class="fa-solid fa-gamepad"></i> Games</a>
 
-<p>
-This project is a smart contract voting system built using Solidity on Ethereum.
-</p>
+        <span class="divider">|</span>
 
-<h2>Features</h2>
-<ul>
-    <li>Secure blockchain voting</li>
-    <li>Transparent results</li>
-</ul>
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
 
-<h2>Tech Stack</h2>
-<p>Solidity, Ethereum</p>
+        <a href="https://github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
 
-<a href="../index.html">← Back to Home</a>
+        <a href="mailto:youremail@example.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+</header>
+
+<div class="container">
+
+    <h1>Ethereum Voting System</h1>
+
+    <!-- INTRO (no card, more natural flow) -->
+    <p>
+        For my final year dissertation I developed a blockchain-based voting system using Ethereum smart contracts.
+        This project pushed me to learn Solidity, improve my front-end skills, and understand how decentralised systems handle security and transparency.
+    </p>
+
+    <h2>How it works</h2>
+    <p>The system operates across three main phases:</p>
+
+    <!-- ONLY phases are cards -->
+    <div class="projects">
+
+        <div class="project">
+            <h3>Initialisation</h3>
+            <p>
+                Users register with login credentials, a secret passphrase, and their wallet address.
+                An admin reviews and verifies each user before voting begins.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Voting</h3>
+            <p>
+                The smart contract is deployed and opened by the admin.
+                Verified users log in and cast their vote securely on the blockchain.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Results</h3>
+            <p>
+                Once all votes are cast, the contract closes automatically.
+                Results are calculated and distributed to users.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- BACK TO NORMAL FLOW -->
+    <h2>Why this is useful</h2>
+    <p>
+        Blockchain technology enables a high level of transparency and security.
+        All votes are publicly verifiable, while identities remain protected through wallet addresses,
+        making the system both trustworthy and privacy-conscious.
+    </p>
+
+    <h2>Features</h2>
+
+    <div class="tags">
+        <span>Secure Voting</span>
+        <span>Transparent Results</span>
+        <span>Smart Contracts</span>
+        <span>Web Interface</span>
+        <span>API Integration</span>
+    </div>
+
+    <!-- TAGS -->
+    <div class="tags">
+        <span>Solidity</span>
+        <span>Ethereum</span>
+        <span>Blockchain</span>
+        <span>Web Dev</span>
+    </div>
+
+    <br>
+
+    <!-- LINKS -->
+    <a href="../index.html">← Back to Home</a>
+
+    <h3>Project Link</h3>
+    <a href="https://github.com/WillJames6/Blockchain-Based-Voting-System" target="_blank">
+        <i class="fa-brands fa-github fa-2x"></i>
+    </a>
+
+</div>
 
 </body>
 </html>

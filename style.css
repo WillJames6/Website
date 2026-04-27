@@ -1,9 +1,22 @@
+/* =========================
+   GLOBAL
+========================= */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #121212;
     color: #eaeaea;
     text-align: center;
+}
+
+/* Optional overlay (used on game pages with background images) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    pointer-events: none;
 }
 
 /* =========================
@@ -18,6 +31,7 @@ body {
     padding: 12px 20px;
     display: flex;
     justify-content: center;
+    z-index: 100;
 }
 
 .nav-center {
@@ -43,22 +57,36 @@ body {
 }
 
 /* =========================
-   CONTENT
+   CONTAINER (MAIN CONTENT STRIP)
 ========================= */
 .container {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 40px;
 }
 
+/* Used for game pages with background image */
+.container.strip {
+    max-width: 800px;
+    background-color: rgba(18, 18, 18, 0.95);
+    border-radius: 10px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
 h1 {
     border-bottom: 2px solid #333;
     padding-bottom: 10px;
     display: inline-block;
 }
 
+h2 {
+    margin-top: 30px;
+}
+
 /* =========================
-   PROJECTS
+   PROJECT CARDS
 ========================= */
 .projects {
     display: flex;
@@ -71,28 +99,31 @@ h1 {
     border-radius: 10px;
     padding: 15px;
     background-color: #1e1e1e;
-    cursor: pointer;
     transition: 0.2s;
 }
 
 .project:hover {
-    transform: translateY(-5px);
     border-color: #4da3ff;
 }
 
 /* =========================
    TAGS
 ========================= */
+.tags {
+    margin-top: 10px;
+}
+
 .tags span {
+    display: inline-block;
     background-color: #2a2a2a;
-    padding: 3px 10px;
+    padding: 5px 12px;
     margin: 4px;
     border-radius: 20px;
     font-size: 12px;
 }
 
 /* =========================
-   GAME GRID
+   GAME GRID (HOMEPAGE)
 ========================= */
 .games-grid {
     display: grid;
@@ -118,7 +149,6 @@ h1 {
     transform: translateY(-5px);
     border-color: #4da3ff;
 }
-
 
 /* IMAGE */
 .game-card img {
@@ -173,11 +203,63 @@ h1 {
 }
 
 /* =========================
+   REVIEW PAGE STYLES
+========================= */
+
+/* HERO IMAGE */
+.hero-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* IMAGE ROW */
+.image-row {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.image-row img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* RATING */
+.rating {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #ffd700; /* gold stars */
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
    MOBILE
 ========================= */
 @media (max-width: 768px) {
     .games-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row img {
+        width: 100%;
     }
 }
 

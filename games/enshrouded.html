@@ -2,19 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Enshrouded Review</title>
+    <title>Game Review</title>
+
     <link rel="stylesheet" href="../style.css">
+
+    <!-- PAGE-SPECIFIC BACKGROUND -->
+    <style>
+        body {
+            background: url("../images/enshrouded-background.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* DARK OVERLAY FOR READABILITY */
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: -1;
+        }
+
+        /* CENTER CONTENT STRIP */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+
+            background-color: rgba(18, 18, 18, 0.95);
+            border-radius: 10px;
+        }
+
+        /* IMAGE ROW */
+        .image-row {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .image-row img {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        /* HERO IMAGE */
+        .hero-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
 <div class="container">
+
+    <!-- TITLE -->
     <h1>Enshrouded</h1>
 
+    <!-- QUICK INFO -->
+    <div class="project" style="text-align: center;">
+        <p><strong>Hours Played:</strong> 100</p>
+        <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <img src="../images/enshrouded-game.jpg" alt="Game image" class="hero-img">
+
+    <!-- WHAT IS THIS GAME -->
+    <h2>What is this game?</h2>
     <p>
-        Review
+        Enshrouded is an open world, exploration sandbox game. It offers gear progression, a well thought out skill tree and a great base building system. 
     </p>
 
+    <!-- EXTRA IMAGES -->
+    <div class="image-row">
+        <img src="../images/game1.jpg" alt="">
+        <img src="../images/game2.jpg" alt="">
+    </div>
+
+    <!-- PROS -->
+    <h2>Pros</h2>
+    <div class="project">
+        <p>+ Engaging gameplay</p>
+        <p>+ Great visuals</p>
+        <p>+ Fun multiplayer</p>
+        <p>+ Skill Tree</p>
+        <p>+ Base Building</p>
+    </div>
+
+    <!-- CONS -->
+    <h2>Cons</h2>
+    <div class="project">
+        <p>- Can feel Repetitive</p>
+        <p>- Some annoying mechanics</p>
+        <p>- Sometimes directionless</p>
+    </div>
+
+    <!-- OVERALL -->
+    <h2>Overall Thoughts</h2>
+    <p>
+        Overall, I would definetly recommend this game to anyone who enjoys open world survival games. It has all the greeat features like unlocking better recipies, a very in-depth skill tree, different combat styles without a tedious hunger and thirst system.
+        Mulitiplayer runs smoothly and is even promoted though different builds, for example and tank and healer class. Enshrouded costs around £25 but will prbably increase as version 1.0 releases so I would say to get it now to avoid paying more in the future.  
+    </p>
+
+    <br>
+
     <a href="../index.html">← Back</a>
+
 </div>
 
 </body>
